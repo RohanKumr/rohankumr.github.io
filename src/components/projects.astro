@@ -1,0 +1,210 @@
+---
+// Projects section component
+import chaiBlends from "../assets/side-projects/fulls/chai-blends.png";
+import netflixClone from "../assets/side-projects/fulls/netflix-clone.jpg";
+import socialMedia from "../assets/side-projects/fulls/social-media-app-campk12.jpg";
+import bubbles from "../assets/side-projects/fulls/bubbles-game.jpg";
+---
+
+<section id="projects" class="section-wrapper">
+  <!-- Projects Header -->
+  <div class="flex flex-row-reverse items-center gap-6 md:gap-8">
+    <div class="h-px w-full bg-zinc-700"></div>
+    <h2
+      class="text-end text-3xl font-semibold whitespace-nowrap md:text-4xl xl:text-5xl"
+    >
+      Projects<span class="text-violet-400">.</span>
+    </h2>
+  </div>
+
+  <!-- Projects -->
+  <div class="grid grid-cols-1 gap-6 md:gap-8 xl:grid-cols-2 xl:gap-10">
+    <!-- Chai Blends -->
+    <div
+      class="group relative mt-12 aspect-video w-full overflow-hidden rounded-lg bg-zinc-700"
+    >
+      <a href="https://chai-blends-frontend.vercel.app/" target="_blank">
+        <img
+          src={chaiBlends.src}
+          alt="An image of an e-commerce webpage called Chai Blends."
+          class="absolute bottom-0 left-1/2 w-[85%] origin-bottom -translate-x-1/2 translate-y-[6%] rounded transition-transform duration-500 group-hover:translate-y-0 group-hover:scale-[1.18]"
+        />
+      </a>
+    </div>
+
+    <div class="mt-6">
+      <div class="flex w-full items-center gap-2">
+        <h4 class="max-w-[calc(100%-150px)] shrink-0 text-lg font-bold">
+          Chai Blends
+        </h4>
+        <div class="h-px w-full bg-zinc-600"></div>
+
+        <!-- GitHub Repository -->
+        <a href="https://github.com/RohanKumr" target="_blank">
+          <i
+            class="fa-brands fa-github text-xl text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+
+        <!-- Live Demo -->
+        <a href="https://chai-blends-frontend.vercel.app/" target="_blank">
+          <i
+            class="fa-solid fa-arrow-up-right-from-square text-lg text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Project Tech Stack -->
+      <div class="-my-2 flex flex-wrap gap-4 text-sm text-violet-400">
+        Next.js – TailwindCSS – JavaScript – Framer Motion
+      </div>
+
+      <!-- Project Description -->
+      <p class="leading-relaxed text-zinc-300">
+        Designed an interactive e-commerce experience with animated transitions
+        and reusable UI components.
+      </p>
+    </div>
+
+    <!-- Netflix Clone -->
+    <div
+      class="group relative mt-12 aspect-video w-full overflow-hidden rounded-lg bg-zinc-700"
+    >
+      <a href="https://github.com/RohanKumr" target="_blank">
+        <img
+          src={netflixClone.src}
+          alt="An image a webpage showing a Netflix clone project."
+          class="absolute bottom-0 left-1/2 w-[85%] origin-bottom -translate-x-1/2 translate-y-[6%] rounded transition-transform duration-500 group-hover:translate-y-0 group-hover:scale-[1.18]"
+        />
+      </a>
+    </div>
+
+    <div class="mt-6">
+      <div class="flex w-full items-center gap-2">
+        <h4 class="max-w-[calc(100%-150px)] shrink-0 text-lg font-bold">
+          Netflix Clone
+        </h4>
+        <div class="h-px w-full bg-zinc-600"></div>
+
+        <!-- GitHub Repository -->
+        <a href="https://github.com/RohanKumr" target="_blank">
+          <i
+            class="fa-brands fa-github text-xl text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+
+        <!-- Live Demo -->
+        <a href="https://github.com/RohanKumr" target="_blank">
+          <i
+            class="fa-solid fa-arrow-up-right-from-square text-lg text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Project Tech Stack -->
+      <div class="-my-2 flex flex-wrap gap-4 text-sm text-violet-400">
+        React – Firebase – SCSS – TMDB API
+      </div>
+
+      <!-- Project Description -->
+      <p class="leading-relaxed text-zinc-300">
+        Created a Netflix-style streaming app with real-time data and trailer
+        previews.
+      </p>
+    </div>
+
+    <!-- Social Media App -->
+    <div
+      class="group relative mt-12 aspect-video w-full overflow-hidden rounded-lg bg-zinc-700"
+    >
+      <a href="https://rohankumr.github.io/feeds/2525" target="_blank">
+        <img
+          src={socialMedia.src}
+          alt="An image of the social media app project."
+          class="absolute bottom-0 left-1/2 w-[85%] origin-bottom -translate-x-1/2 translate-y-[6%] rounded transition-transform duration-500 group-hover:translate-y-0 group-hover:scale-[1.18]"
+        />
+      </a>
+    </div>
+
+    <div class="mt-6">
+      <div class="flex w-full items-center gap-2">
+        <h4 class="max-w-[calc(100%-150px)] shrink-0 text-lg font-bold">
+          Social Media App
+        </h4>
+        <div class="h-px w-full bg-zinc-600"></div>
+
+        <!-- GitHub Repository -->
+        <a href="https://github.com/RohanKumr" target="_blank">
+          <i
+            class="fa-brands fa-github text-xl text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+
+        <!-- Live Demo -->
+        <a href="https://rohankumr.github.io/feeds/2525" target="_blank">
+          <i
+            class="fa-solid fa-arrow-up-right-from-square text-lg text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Project Tech Stack -->
+      <div class="-my-2 flex flex-wrap gap-4 text-sm text-violet-400">
+        HTML – CSS – JavaScript – React – Redux
+      </div>
+
+      <!-- Project Description -->
+      <p class="leading-relaxed text-zinc-300">
+        A social media prototype built with React and Redux, showcasing user
+        authentication, dynamic feeds, and interactive features.
+      </p>
+    </div>
+
+    <!-- Bubbles -->
+    <div
+      class="group relative mt-12 aspect-video w-full overflow-hidden rounded-lg bg-zinc-700"
+    >
+      <a href="https://rohankumr.github.io/bubbles/" target="_blank">
+        <img
+          src={bubbles.src}
+          alt="An image of the Bubbles game project."
+          class="absolute bottom-0 left-1/2 w-[85%] origin-bottom -translate-x-1/2 translate-y-[6%] rounded transition-transform duration-500 group-hover:translate-y-0 group-hover:scale-[1.18]"
+        />
+      </a>
+    </div>
+
+    <div class="mt-6">
+      <div class="flex w-full items-center gap-2">
+        <h4 class="max-w-[calc(100%-150px)] shrink-0 text-lg font-bold">
+          Bubbles
+        </h4>
+        <div class="h-px w-full bg-zinc-600"></div>
+
+        <!-- GitHub Repository -->
+        <a href="https://github.com/rohanKumr" target="_blank">
+          <i
+            class="fa-brands fa-github text-xl text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+
+        <!-- Live Demo -->
+        <a href="https://rohankumr.github.io/bubbles/" target="_blank">
+          <i
+            class="fa-solid fa-arrow-up-right-from-square text-lg text-zinc-300 transition-colors hover:text-violet-400"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Project Tech Stack -->
+      <div class="-my-2 flex flex-wrap gap-4 text-sm text-violet-400">
+        HTML – CSS – JavaScript – HTML Canvas
+      </div>
+
+      <!-- Project Description -->
+      <p class="leading-relaxed text-zinc-300">
+        Developed an interactive canvas-based game where players control a fish
+        by clicking on the screen to pop bubbles and dodge obstacles.
+      </p>
+    </div>
+  </div>
+</section>

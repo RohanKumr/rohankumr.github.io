@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/layout.astro";
+import Header from "../components/header.astro";
+import About from "../components/about.astro";
+import Projects from "../components/projects.astro";
+import Experience from "../components/experience.astro";
+import Contact from "../components/contact.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Rohan Kumar - Frontend Developer">
+  <!-- Root -->
+  <div class="min-h-screen bg-zinc-900 text-zinc-50">
+    <!-- Mobile and Tablet Layout -->
+    <div class="lg:hidden">
+      <Header />
+      <main
+        class="space-y-12 px-6 pb-20 sm:space-y-16 sm:px-8 sm:pb-24 md:space-y-20 md:px-12 md:pb-32"
+      >
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+    </div>
+
+    <!-- Desktop Layout -->
+    <div
+      class="hidden lg:mx-auto lg:flex lg:min-h-screen lg:max-w-7xl lg:px-8 xl:max-w-[1400px] xl:px-12 2xl:px-16"
+    >
+      <!-- Fixed Header Section -->
+      <div
+        class="py-24 lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-6/12 lg:flex-col lg:justify-start lg:overflow-y-auto xl:w-3/6"
+      >
+        <Header />
+      </div>
+
+      <!-- Scrollable Main Section -->
+      <div class="lg:w-7/12 lg:overflow-y-auto xl:w-3/5">
+        <main
+          class="space-y-20 px-8 py-20 xl:space-y-24 xl:px-12 xl:py-24 2xl:px-16"
+        >
+          <About />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
+      </div>
+    </div>
+  </div>
 </Layout>
